@@ -10,22 +10,23 @@
 <body class="bg-gray-100 text-gray-800 font-sans">
 
   <!-- HEADER -->
-  <header class="bg-indigo-700 text-white py-6 shadow-lg sticky top-0 z-50">
+  <header class="bg-gradient-to-r from-blue-700 to-green-500 text-white py-6 shadow-lg sticky top-0 z-50">
     <div class="container mx-auto px-6 flex justify-between items-center">
       <h1 class="text-2xl font-bold">Sistem Operasi 1 — Minggu 2</h1>
-      <nav class="space-x-4 hidden md:block">
-        <a href="#tujuan" class="hover:text-indigo-200 transition">Tujuan</a>
-        <a href="#sejarah" class="hover:text-indigo-200 transition">Sejarah OS</a>
-        <a href="#evolusi" class="hover:text-indigo-200 transition">Evolusi OS</a>
-        <a href="#perbandingan" class="hover:text-indigo-200 transition">Perbandingan</a>
-        <a href="#resume" class="hover:text-indigo-200 transition">Resume</a>
+      <nav class="hidden md:flex space-x-4">
+        <a href="#tujuan" class="hover:text-green-200 transition">Tujuan</a>
+        <a href="#sejarah" class="hover:text-green-200 transition">Sejarah OS</a>
+        <a href="#evolusi" class="hover:text-green-200 transition">Evolusi</a>
+        <a href="#perbandingan" class="hover:text-green-200 transition">Perbandingan</a>
+        <a href="#resume" class="hover:text-green-200 transition">Resume</a>
+        <a href="pengayaan2.html" class="bg-white text-blue-700 font-semibold px-3 py-1 rounded-lg hover:bg-green-200 transition">🌱 Pengayaan Materi</a>
       </nav>
     </div>
   </header>
 
   <!-- TUJUAN -->
   <section id="tujuan" class="container mx-auto px-6 py-10">
-    <h2 class="text-3xl font-semibold text-indigo-700 text-center mb-6">🎯 Tujuan Pembelajaran Minggu 2</h2>
+    <h2 class="text-3xl font-semibold text-blue-700 text-center mb-6">🎯 Tujuan Pembelajaran Minggu 2</h2>
     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
       <div class="bg-white rounded-xl p-5 shadow-md hover:shadow-xl transition">
         <p>Menjelaskan sejarah perkembangan sistem operasi dari generasi awal hingga modern.</p>
@@ -41,7 +42,7 @@
 
   <!-- SEJARAH -->
   <section id="sejarah" class="container mx-auto px-6 py-10">
-    <h2 class="text-2xl font-semibold text-indigo-700 mb-4">📜 Sejarah Sistem Operasi</h2>
+    <h2 class="text-2xl font-semibold text-green-700 mb-4">📜 Sejarah Sistem Operasi</h2>
     <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition">
       <p class="mb-3">
         Sistem operasi berkembang seiring dengan evolusi komputer. Pada awalnya, komputer tidak memiliki sistem operasi.
@@ -62,107 +63,57 @@
 
   <!-- EVOLUSI -->
   <section id="evolusi" class="container mx-auto px-6 py-10">
-    <h2 class="text-2xl font-semibold text-indigo-700 mb-4">⚙️ Evolusi Sistem Operasi</h2>
+    <h2 class="text-2xl font-semibold text-blue-700 mb-4">⚙️ Evolusi Sistem Operasi</h2>
     <div class="grid md:grid-cols-2 gap-6">
       <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition">
-        <h3 class="text-indigo-600 font-semibold mb-2">Batch System</h3>
-        <p>Program dijalankan satu per satu secara berurutan tanpa interaksi pengguna. Efisien di masanya, tapi tidak fleksibel.</p>
+        <h3 class="text-blue-600 font-semibold mb-2">Batch System</h3>
+        <p>Program dijalankan satu per satu secara berurutan tanpa interaksi pengguna.</p>
       </div>
       <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition">
-        <h3 class="text-indigo-600 font-semibold mb-2">Time-Sharing System</h3>
+        <h3 class="text-blue-600 font-semibold mb-2">Time-Sharing System</h3>
         <p>CPU membagi waktu untuk banyak pengguna, sehingga komputer dapat digunakan secara interaktif.</p>
       </div>
       <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition">
-        <h3 class="text-indigo-600 font-semibold mb-2">Real-Time System</h3>
+        <h3 class="text-green-600 font-semibold mb-2">Real-Time System</h3>
         <p>Menjalankan tugas dengan waktu respons cepat, digunakan pada sistem kendali industri dan otomotif.</p>
       </div>
       <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition">
-        <h3 class="text-indigo-600 font-semibold mb-2">Modern OS</h3>
-        <p>Mendukung multitasking, GUI, virtualisasi, keamanan, dan konektivitas jaringan, misalnya Windows, Linux, macOS.</p>
+        <h3 class="text-green-600 font-semibold mb-2">Modern OS</h3>
+        <p>Mendukung multitasking, GUI, virtualisasi, keamanan, dan konektivitas jaringan.</p>
       </div>
-    </div>
-  </section>
-
-  <!-- PERBANDINGAN -->
-  <section id="perbandingan" class="container mx-auto px-6 py-10">
-    <h2 class="text-2xl font-semibold text-indigo-700 mb-4">📊 Perbandingan Jenis Sistem Operasi</h2>
-    <div class="overflow-x-auto bg-white rounded-xl shadow-md hover:shadow-lg transition">
-      <table class="min-w-full text-sm text-left">
-        <thead class="bg-indigo-600 text-white">
-          <tr>
-            <th class="py-3 px-4">Jenis OS</th>
-            <th class="py-3 px-4">Ciri Utama</th>
-            <th class="py-3 px-4">Kelebihan</th>
-            <th class="py-3 px-4">Kekurangan</th>
-          </tr>
-        </thead>
-        <tbody class="divide-y">
-          <tr class="hover:bg-indigo-50">
-            <td class="py-3 px-4 font-medium">Batch</td>
-            <td class="py-3 px-4">Menjalankan program secara berurutan tanpa interaksi</td>
-            <td class="py-3 px-4">Efisien untuk tugas berulang</td>
-            <td class="py-3 px-4">Tidak fleksibel, tidak interaktif</td>
-          </tr>
-          <tr class="hover:bg-indigo-50">
-            <td class="py-3 px-4 font-medium">Time-Sharing</td>
-            <td class="py-3 px-4">Banyak pengguna berbagi CPU</td>
-            <td class="py-3 px-4">Interaktif, mendukung multitasking</td>
-            <td class="py-3 px-4">Perlu manajemen CPU yang kompleks</td>
-          </tr>
-          <tr class="hover:bg-indigo-50">
-            <td class="py-3 px-4 font-medium">Real-Time</td>
-            <td class="py-3 px-4">Respon cepat terhadap input</td>
-            <td class="py-3 px-4">Tepat waktu, stabil untuk sistem kritikal</td>
-            <td class="py-3 px-4">Kurang cocok untuk multitasking umum</td>
-          </tr>
-          <tr class="hover:bg-indigo-50">
-            <td class="py-3 px-4 font-medium">Modern</td>
-            <td class="py-3 px-4">GUI, multitasking, jaringan</td>
-            <td class="py-3 px-4">Mudah digunakan, aman, efisien</td>
-            <td class="py-3 px-4">Membutuhkan hardware yang lebih tinggi</td>
-          </tr>
-        </tbody>
-      </table>
     </div>
   </section>
 
   <!-- RESUME -->
-  <section id="resume" class="bg-indigo-50 py-10">
+  <section id="resume" class="bg-gradient-to-r from-blue-600 to-green-400 py-10">
     <div class="container mx-auto px-6 text-center">
       <div class="bg-white p-8 rounded-xl shadow-md inline-block max-w-3xl">
-        <h2 class="text-2xl font-semibold text-indigo-700 mb-4">🧾 Kesimpulan & Resume</h2>
+        <h2 class="text-2xl font-semibold text-blue-700 mb-4">🧾 Kesimpulan & Resume</h2>
         <p class="text-gray-700 leading-relaxed">
           Sistem operasi berevolusi dari sistem batch sederhana menjadi OS modern yang kompleks dan interaktif.  
-          Masing-masing generasi OS membawa inovasi untuk efisiensi, kecepatan, dan kemudahan penggunaan.  
           Pemahaman sejarah OS membantu memahami konsep dasar dan arah pengembangan sistem komputasi di masa depan.
         </p>
       </div>
     </div>
   </section>
 
-  <!-- NAVIGASI ANTAR MINGGU -->
+  <!-- NAVIGASI -->
   <section class="py-8 text-center">
     <div class="flex flex-wrap justify-center gap-4">
-      <a href="minggu1.html" class="bg-indigo-600 text-white px-5 py-2 rounded-lg shadow hover:bg-indigo-700 transition">⬅️ Minggu 1</a>
+      <a href="minggu1.html" class="bg-blue-600 text-white px-5 py-2 rounded-lg shadow hover:bg-blue-700 transition">⬅️ Minggu 1</a>
       <a href="index.html" class="bg-gray-200 text-gray-800 px-5 py-2 rounded-lg shadow hover:bg-gray-300 transition">🏠 Home</a>
-      <a href="minggu3.html" class="bg-indigo-600 text-white px-5 py-2 rounded-lg shadow hover:bg-indigo-700 transition">➡️ Minggu 3</a>
+      <a href="pengayaan2.html" class="bg-green-500 text-white px-5 py-2 rounded-lg shadow hover:bg-green-400 transition">🌱 Pengayaan</a>
+      <a href="minggu3.html" class="bg-blue-600 text-white px-5 py-2 rounded-lg shadow hover:bg-blue-700 transition">➡️ Minggu 3</a>
     </div>
   </section>
 
   <!-- FOOTER -->
-  <footer class="bg-indigo-700 text-white text-center py-4 mt-6">
+  <footer class="bg-blue-900 text-white text-center py-4 mt-6">
     <p>&copy; 2025 Program Studi Teknik Informatika | Dosen: Takdir Ruslan, ST., M.Kom / Abdurrahman, S.Pi</p>
   </footer>
 
-  <!-- Scroll Reveal Animation -->
   <script>
-    ScrollReveal().reveal('section', { 
-      distance: '50px', 
-      duration: 1000, 
-      easing: 'ease-out', 
-      origin: 'bottom', 
-      interval: 100 
-    });
+    ScrollReveal().reveal('section', { distance: '50px', duration: 1000, origin: 'bottom', interval: 100 });
   </script>
 </body>
 </html>
