@@ -1,63 +1,110 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Minggu 1 - Materi Sistem Operasi 1</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Minggu 1 — Pengenalan Sistem Operasi</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-  <style>
-    /* Simple card hover animation */
-    .card:hover { transform: translateY(-6px); box-shadow: 0 12px 30px rgba(99,102,241,0.15); }
-    .fade-enter { opacity: 0; transform: translateY(6px); }
-    .fade-enter-active { opacity: 1; transform: translateY(0); transition: all 300ms ease; }
-  </style>
 </head>
-<body class="bg-gray-50 text-gray-800 font-sans leading-relaxed">
-  <header class="bg-indigo-700 text-white">
-    <div class="container mx-auto px-6 py-6 text-center">
-      <h1 class="text-3xl font-bold">Mata Kuliah: Sistem Operasi 1</h1>
-      <p class="mt-1 text-indigo-200">Program Studi Teknik Informatika — 3 SKS</p>
-      <p class="mt-1 text-sm text-indigo-300">Dosen Pengampu: Takdir Ruslan, S.T., M.Kom &amp; Abdurrahman, S.Pi</p>
+<body class="bg-gray-100 text-gray-800 font-sans">
+
+  <!-- Header -->
+  <header class="bg-indigo-700 text-white py-6 shadow-lg">
+    <div class="container mx-auto px-6 text-center">
+      <h1 class="text-3xl font-bold">Minggu 1 — Pengenalan Sistem Operasi</h1>
+      <p class="mt-2 text-indigo-200">Dosen: Takdir Ruslan, ST., M.Kom / Abdurrahman, S.Pi</p>
     </div>
   </header>
-  <main class="container mx-auto px-6 py-8">
-<section class="mb-6">
-  <div class="flex items-center justify-between">
-    <div>
-      <h2 class="text-2xl font-semibold">Minggu 1</h2>
-      <p class="text-gray-600 mt-1">Judul Materi: Pengenalan sistem operasi & fungsinya</p>
+
+  <!-- Tujuan Pembelajaran -->
+  <section class="container mx-auto px-6 py-8">
+    <h2 class="text-2xl font-semibold text-center text-indigo-700 mb-6">🎯 Tujuan Pembelajaran</h2>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div class="bg-white rounded-xl p-5 shadow-md hover:shadow-xl transition">
+        <p>Menjelaskan pengertian sistem operasi serta perannya dalam komputer dan perangkat digital.</p>
+      </div>
+      <div class="bg-white rounded-xl p-5 shadow-md hover:shadow-xl transition">
+        <p>Mengidentifikasi fungsi utama sistem operasi seperti pengelolaan CPU, memori, file, dan perangkat I/O.</p>
+      </div>
+      <div class="bg-white rounded-xl p-5 shadow-md hover:shadow-xl transition">
+        <p>Menyebutkan contoh OS populer (Windows, Linux, macOS, Android, iOS).</p>
+      </div>
+      <div class="bg-white rounded-xl p-5 shadow-md hover:shadow-xl transition">
+        <p>Menghubungkan peran OS dengan kehidupan sehari-hari melalui analogi sederhana.</p>
+      </div>
+      <div class="bg-white rounded-xl p-5 shadow-md hover:shadow-xl transition">
+        <p>Memahami arah dan kontrak perkuliahan (aturan kelas, metode pembelajaran, dan penilaian).</p>
+      </div>
     </div>
-    <div>
-      <a href="index.html" class="inline-block bg-indigo-600 text-white px-4 py-2 rounded-lg shadow hover:bg-indigo-500">Kembali ke Index</a>
+  </section>
+
+  <!-- Materi -->
+  <section class="container mx-auto px-6 py-8">
+    <h2 class="text-2xl font-semibold text-center text-indigo-700 mb-6">📘 Materi</h2>
+
+    <div class="space-y-6">
+      <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition">
+        <h3 class="text-xl font-semibold text-indigo-700 mb-3">Pendahuluan</h3>
+        <p>Sistem Operasi (Operating System / OS) merupakan komponen fundamental dalam perangkat digital. OS berfungsi sebagai penghubung antara perangkat keras (hardware) dan perangkat lunak (software), memastikan semua sumber daya komputer digunakan secara efisien dan terkoordinasi.</p>
+      </div>
+
+      <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition">
+        <h3 class="text-xl font-semibold text-indigo-700 mb-3">Definisi dan Fungsi Sistem Operasi</h3>
+        <ul class="list-decimal ml-6 space-y-1">
+          <li><strong>Manajemen Proses:</strong> Mengatur proses yang berjalan pada CPU agar tidak terjadi konflik.</li>
+          <li><strong>Manajemen Memori:</strong> Mengalokasikan ruang memori untuk aplikasi agar berjalan lancar.</li>
+          <li><strong>Manajemen Storage / File System:</strong> Menyimpan dan mengelola struktur direktori.</li>
+          <li><strong>Manajemen I/O:</strong> Mengatur komunikasi antara perangkat keras dan aplikasi.</li>
+          <li><strong>User Interface (UI):</strong> Menyediakan antarmuka GUI/CLI agar interaksi lebih mudah.</li>
+        </ul>
+      </div>
+
+      <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition">
+        <h3 class="text-xl font-semibold text-indigo-700 mb-3">Contoh dan Kategori Sistem Operasi</h3>
+
+        <h4 class="font-semibold text-indigo-600 mt-3">Kategori Desktop</h4>
+        <ul class="list-disc ml-6">
+          <li><strong>Windows:</strong> OS user-friendly populer di perkantoran dan rumah.</li>
+          <li><strong>Linux:</strong> OS open-source stabil dan aman, sering dipakai di server dan developer.</li>
+          <li><strong>macOS:</strong> OS eksklusif Apple, populer di dunia kreatif.</li>
+        </ul>
+
+        <h4 class="font-semibold text-indigo-600 mt-4">Kategori Mobile</h4>
+        <ul class="list-disc ml-6">
+          <li><strong>Android:</strong> OS fleksibel dengan banyak variasi perangkat.</li>
+          <li><strong>iOS:</strong> OS eksklusif Apple yang aman dan stabil.</li>
+        </ul>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="bg-white p-6 rounded-xl shadow-md mb-6">
-  <h3 class="font-semibold text-lg mb-2">Deskripsi Singkat</h3>
-  <p class="text-gray-700 mb-4">[Isi deskripsi materi minggu 1 di sini.]</p>
+  <!-- Kesimpulan/Resume -->
+  <section class="bg-indigo-50 py-8">
+    <div class="container mx-auto px-6 text-center">
+      <div class="bg-white p-6 rounded-xl shadow-md inline-block max-w-3xl">
+        <h2 class="text-2xl font-semibold text-indigo-700 mb-3">🧾 Kesimpulan & Resume</h2>
+        <p class="text-gray-700">
+          Sistem Operasi adalah perangkat lunak utama yang menghubungkan hardware dan software.  
+          OS memiliki fungsi utama: manajemen proses, memori, storage, I/O, dan UI.  
+          OS populer meliputi Windows, Linux, macOS, Android, dan iOS.  
+          Pemahaman OS dasar sangat penting sebagai fondasi untuk instalasi, konfigurasi, dan troubleshooting komputer.
+        </p>
+      </div>
+    </div>
+  </section>
 
-  <h3 class="font-semibold text-lg mb-2">Tujuan Pembelajaran</h3>
-  <ul class="list-disc ml-6 text-gray-700 mb-4">
-    <li>[Tujuan 1]</li>
-    <li>[Tujuan 2]</li>
-  </ul>
+  <!-- Navigasi -->
+  <section class="py-6 text-center">
+    <div class="space-x-4">
+      <a href="index.html" class="bg-gray-200 text-gray-800 px-5 py-2 rounded-lg shadow hover:bg-gray-300 transition">🏠 Kembali ke Home</a>
+      <a href="minggu2.html" class="bg-indigo-600 text-white px-5 py-2 rounded-lg shadow hover:bg-indigo-700 transition">➡️ Minggu Selanjutnya</a>
+    </div>
+  </section>
 
-  <h3 class="font-semibold text-lg mb-2">Sumber & Materi</h3>
-  <ul class="list-disc ml-6 text-gray-700">
-    <li><a href="#" class="text-indigo-600 hover:underline">Modul / Slide (upload file)</a></li>
-    <li><a href="#" class="text-indigo-600 hover:underline">Video pembelajaran (embed link)</a></li>
-  </ul>
-</section>
-
-<section class="mb-8">
-  <h3 class="font-semibold text-lg mb-2">Tugas / Praktikum</h3>
-  <p class="text-gray-700">[Petunjuk tugas praktikum minggu 1 ...]</p>
-</section>
-  </main>
-  <footer class="bg-indigo-700 text-white text-center py-4 mt-8">
-    <p>&copy; 2025 Program Studi Teknik Informatika | Mata Kuliah Sistem Operasi 1</p>
+  <!-- Footer -->
+  <footer class="bg-indigo-700 text-white text-center py-4 mt-6">
+    <p>&copy; 2025 Program Studi Teknik Informatika | Dosen: Takdir Ruslan, ST., M.Kom / Abdurrahman, S.Pi</p>
   </footer>
+
 </body>
 </html>
