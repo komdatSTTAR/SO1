@@ -1,63 +1,168 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Minggu 2 - Materi Sistem Operasi 1</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minggu 2 — Sejarah dan Evolusi Sistem Operasi</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-  <style>
-    /* Simple card hover animation */
-    .card:hover { transform: translateY(-6px); box-shadow: 0 12px 30px rgba(99,102,241,0.15); }
-    .fade-enter { opacity: 0; transform: translateY(6px); }
-    .fade-enter-active { opacity: 1; transform: translateY(0); transition: all 300ms ease; }
-  </style>
+  <script src="https://unpkg.com/scrollreveal"></script>
 </head>
-<body class="bg-gray-50 text-gray-800 font-sans leading-relaxed">
-  <header class="bg-indigo-700 text-white">
-    <div class="container mx-auto px-6 py-6 text-center">
-      <h1 class="text-3xl font-bold">Mata Kuliah: Sistem Operasi 1</h1>
-      <p class="mt-1 text-indigo-200">Program Studi Teknik Informatika — 3 SKS</p>
-      <p class="mt-1 text-sm text-indigo-300">Dosen Pengampu: Takdir Ruslan, S.T., M.Kom &amp; Abdurrahman, S.Pi</p>
+<body class="bg-gray-100 text-gray-800 font-sans">
+
+  <!-- HEADER -->
+  <header class="bg-indigo-700 text-white py-6 shadow-lg sticky top-0 z-50">
+    <div class="container mx-auto px-6 flex justify-between items-center">
+      <h1 class="text-2xl font-bold">Sistem Operasi 1 — Minggu 2</h1>
+      <nav class="space-x-4 hidden md:block">
+        <a href="#tujuan" class="hover:text-indigo-200 transition">Tujuan</a>
+        <a href="#sejarah" class="hover:text-indigo-200 transition">Sejarah OS</a>
+        <a href="#evolusi" class="hover:text-indigo-200 transition">Evolusi OS</a>
+        <a href="#perbandingan" class="hover:text-indigo-200 transition">Perbandingan</a>
+        <a href="#resume" class="hover:text-indigo-200 transition">Resume</a>
+      </nav>
     </div>
   </header>
-  <main class="container mx-auto px-6 py-8">
-<section class="mb-6">
-  <div class="flex items-center justify-between">
-    <div>
-      <h2 class="text-2xl font-semibold">Minggu 2</h2>
-      <p class="text-gray-600 mt-1">Judul Materi: Jenis-jenis OS populer</p>
+
+  <!-- TUJUAN -->
+  <section id="tujuan" class="container mx-auto px-6 py-10">
+    <h2 class="text-3xl font-semibold text-indigo-700 text-center mb-6">🎯 Tujuan Pembelajaran Minggu 2</h2>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div class="bg-white rounded-xl p-5 shadow-md hover:shadow-xl transition">
+        <p>Menjelaskan sejarah perkembangan sistem operasi dari generasi awal hingga modern.</p>
+      </div>
+      <div class="bg-white rounded-xl p-5 shadow-md hover:shadow-xl transition">
+        <p>Membedakan sistem batch, time-sharing, real-time, dan sistem operasi modern.</p>
+      </div>
+      <div class="bg-white rounded-xl p-5 shadow-md hover:shadow-xl transition">
+        <p>Menilai kelebihan dan kekurangan berbagai jenis OS berdasarkan fungsi dan era penggunaannya.</p>
+      </div>
     </div>
-    <div>
-      <a href="index.html" class="inline-block bg-indigo-600 text-white px-4 py-2 rounded-lg shadow hover:bg-indigo-500">Kembali ke Index</a>
+  </section>
+
+  <!-- SEJARAH -->
+  <section id="sejarah" class="container mx-auto px-6 py-10">
+    <h2 class="text-2xl font-semibold text-indigo-700 mb-4">📜 Sejarah Sistem Operasi</h2>
+    <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition">
+      <p class="mb-3">
+        Sistem operasi berkembang seiring dengan evolusi komputer. Pada awalnya, komputer tidak memiliki sistem operasi.
+        Pengguna harus menjalankan program langsung dengan kartu punch atau tape secara manual.
+      </p>
+      <p class="mb-3">
+        Seiring meningkatnya kompleksitas, sistem operasi muncul untuk mengatur eksekusi program, manajemen memori,
+        serta input-output secara otomatis. Setiap generasi komputer membawa perubahan besar dalam fungsi dan efisiensi OS.
+      </p>
+      <ul class="list-disc ml-6 mt-3 space-y-2">
+        <li><strong>Generasi 1 (1940–1950):</strong> Tanpa OS, pemrograman dilakukan manual menggunakan switch & punch card.</li>
+        <li><strong>Generasi 2 (1950–1960):</strong> Muncul <em>Batch Processing System</em> — program dijalankan bergiliran otomatis.</li>
+        <li><strong>Generasi 3 (1960–1980):</strong> Lahir <em>Time-Sharing System</em>, memungkinkan banyak pengguna sekaligus.</li>
+        <li><strong>Generasi 4 (1980–sekarang):</strong> Era <em>Modern OS</em> seperti Windows, Linux, macOS, Android, iOS.</li>
+      </ul>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="bg-white p-6 rounded-xl shadow-md mb-6">
-  <h3 class="font-semibold text-lg mb-2">Deskripsi Singkat</h3>
-  <p class="text-gray-700 mb-4">[Isi deskripsi materi minggu 2 di sini.]</p>
+  <!-- EVOLUSI -->
+  <section id="evolusi" class="container mx-auto px-6 py-10">
+    <h2 class="text-2xl font-semibold text-indigo-700 mb-4">⚙️ Evolusi Sistem Operasi</h2>
+    <div class="grid md:grid-cols-2 gap-6">
+      <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition">
+        <h3 class="text-indigo-600 font-semibold mb-2">Batch System</h3>
+        <p>Program dijalankan satu per satu secara berurutan tanpa interaksi pengguna. Efisien di masanya, tapi tidak fleksibel.</p>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition">
+        <h3 class="text-indigo-600 font-semibold mb-2">Time-Sharing System</h3>
+        <p>CPU membagi waktu untuk banyak pengguna, sehingga komputer dapat digunakan secara interaktif.</p>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition">
+        <h3 class="text-indigo-600 font-semibold mb-2">Real-Time System</h3>
+        <p>Menjalankan tugas dengan waktu respons cepat, digunakan pada sistem kendali industri dan otomotif.</p>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition">
+        <h3 class="text-indigo-600 font-semibold mb-2">Modern OS</h3>
+        <p>Mendukung multitasking, GUI, virtualisasi, keamanan, dan konektivitas jaringan, misalnya Windows, Linux, macOS.</p>
+      </div>
+    </div>
+  </section>
 
-  <h3 class="font-semibold text-lg mb-2">Tujuan Pembelajaran</h3>
-  <ul class="list-disc ml-6 text-gray-700 mb-4">
-    <li>[Tujuan 1]</li>
-    <li>[Tujuan 2]</li>
-  </ul>
+  <!-- PERBANDINGAN -->
+  <section id="perbandingan" class="container mx-auto px-6 py-10">
+    <h2 class="text-2xl font-semibold text-indigo-700 mb-4">📊 Perbandingan Jenis Sistem Operasi</h2>
+    <div class="overflow-x-auto bg-white rounded-xl shadow-md hover:shadow-lg transition">
+      <table class="min-w-full text-sm text-left">
+        <thead class="bg-indigo-600 text-white">
+          <tr>
+            <th class="py-3 px-4">Jenis OS</th>
+            <th class="py-3 px-4">Ciri Utama</th>
+            <th class="py-3 px-4">Kelebihan</th>
+            <th class="py-3 px-4">Kekurangan</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y">
+          <tr class="hover:bg-indigo-50">
+            <td class="py-3 px-4 font-medium">Batch</td>
+            <td class="py-3 px-4">Menjalankan program secara berurutan tanpa interaksi</td>
+            <td class="py-3 px-4">Efisien untuk tugas berulang</td>
+            <td class="py-3 px-4">Tidak fleksibel, tidak interaktif</td>
+          </tr>
+          <tr class="hover:bg-indigo-50">
+            <td class="py-3 px-4 font-medium">Time-Sharing</td>
+            <td class="py-3 px-4">Banyak pengguna berbagi CPU</td>
+            <td class="py-3 px-4">Interaktif, mendukung multitasking</td>
+            <td class="py-3 px-4">Perlu manajemen CPU yang kompleks</td>
+          </tr>
+          <tr class="hover:bg-indigo-50">
+            <td class="py-3 px-4 font-medium">Real-Time</td>
+            <td class="py-3 px-4">Respon cepat terhadap input</td>
+            <td class="py-3 px-4">Tepat waktu, stabil untuk sistem kritikal</td>
+            <td class="py-3 px-4">Kurang cocok untuk multitasking umum</td>
+          </tr>
+          <tr class="hover:bg-indigo-50">
+            <td class="py-3 px-4 font-medium">Modern</td>
+            <td class="py-3 px-4">GUI, multitasking, jaringan</td>
+            <td class="py-3 px-4">Mudah digunakan, aman, efisien</td>
+            <td class="py-3 px-4">Membutuhkan hardware yang lebih tinggi</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
 
-  <h3 class="font-semibold text-lg mb-2">Sumber & Materi</h3>
-  <ul class="list-disc ml-6 text-gray-700">
-    <li><a href="#" class="text-indigo-600 hover:underline">Modul / Slide (upload file)</a></li>
-    <li><a href="#" class="text-indigo-600 hover:underline">Video pembelajaran (embed link)</a></li>
-  </ul>
-</section>
+  <!-- RESUME -->
+  <section id="resume" class="bg-indigo-50 py-10">
+    <div class="container mx-auto px-6 text-center">
+      <div class="bg-white p-8 rounded-xl shadow-md inline-block max-w-3xl">
+        <h2 class="text-2xl font-semibold text-indigo-700 mb-4">🧾 Kesimpulan & Resume</h2>
+        <p class="text-gray-700 leading-relaxed">
+          Sistem operasi berevolusi dari sistem batch sederhana menjadi OS modern yang kompleks dan interaktif.  
+          Masing-masing generasi OS membawa inovasi untuk efisiensi, kecepatan, dan kemudahan penggunaan.  
+          Pemahaman sejarah OS membantu memahami konsep dasar dan arah pengembangan sistem komputasi di masa depan.
+        </p>
+      </div>
+    </div>
+  </section>
 
-<section class="mb-8">
-  <h3 class="font-semibold text-lg mb-2">Tugas / Praktikum</h3>
-  <p class="text-gray-700">[Petunjuk tugas praktikum minggu 2 ...]</p>
-</section>
-  </main>
-  <footer class="bg-indigo-700 text-white text-center py-4 mt-8">
-    <p>&copy; 2025 Program Studi Teknik Informatika | Mata Kuliah Sistem Operasi 1</p>
+  <!-- NAVIGASI ANTAR MINGGU -->
+  <section class="py-8 text-center">
+    <div class="flex flex-wrap justify-center gap-4">
+      <a href="minggu1.html" class="bg-indigo-600 text-white px-5 py-2 rounded-lg shadow hover:bg-indigo-700 transition">⬅️ Minggu 1</a>
+      <a href="index.html" class="bg-gray-200 text-gray-800 px-5 py-2 rounded-lg shadow hover:bg-gray-300 transition">🏠 Home</a>
+      <a href="minggu3.html" class="bg-indigo-600 text-white px-5 py-2 rounded-lg shadow hover:bg-indigo-700 transition">➡️ Minggu 3</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-indigo-700 text-white text-center py-4 mt-6">
+    <p>&copy; 2025 Program Studi Teknik Informatika | Dosen: Takdir Ruslan, ST., M.Kom / Abdurrahman, S.Pi</p>
   </footer>
+
+  <!-- Scroll Reveal Animation -->
+  <script>
+    ScrollReveal().reveal('section', { 
+      distance: '50px', 
+      duration: 1000, 
+      easing: 'ease-out', 
+      origin: 'bottom', 
+      interval: 100 
+    });
+  </script>
 </body>
 </html>
