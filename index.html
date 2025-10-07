@@ -4,113 +4,113 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sistem Operasi 1</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/2942/2942078.png">
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="bg-gradient-to-b from-blue-600 to-green-500 text-white font-sans">
+<body class="bg-gray-100 font-sans leading-relaxed tracking-wide">
+
   <!-- Navbar -->
-  <nav class="bg-blue-800 bg-opacity-70 backdrop-blur-md sticky top-0 z-50 shadow-md">
-    <div class="max-w-6xl mx-auto px-6 flex justify-between items-center py-3">
+  <nav class="bg-gradient-to-r from-blue-700 to-green-500 text-white py-4 shadow-lg">
+    <div class="container mx-auto flex justify-between items-center px-6">
       <h1 class="text-2xl font-bold">Sistem Operasi 1</h1>
-      <div class="space-x-4 text-sm font-medium">
-        <a href="#tentang" class="hover:text-yellow-300">Tentang</a>
-        <a href="#minggu" class="hover:text-yellow-300">Materi</a>
-        <a href="#dosen" class="hover:text-yellow-300">Dosen</a>
-        <a href="#kontak" class="hover:text-yellow-300">Kontak</a>
-      </div>
+      <ul class="flex space-x-6 font-medium">
+        <li><a href="#beranda" class="hover:text-yellow-300 transition">Beranda</a></li>
+        <li><a href="#tentang" class="hover:text-yellow-300 transition">Tentang</a></li>
+        <li><a href="#materi" class="hover:text-yellow-300 transition">Materi</a></li>
+        <li><a href="#dosen" class="hover:text-yellow-300 transition">Dosen</a></li>
+        <li><a href="#kontak" class="hover:text-yellow-300 transition">Kontak</a></li>
+      </ul>
     </div>
   </nav>
 
   <!-- Hero Section -->
-  <section class="text-center py-16 px-6 relative">
-    <lottie-player 
-      src="https://assets4.lottiefiles.com/packages/lf20_7wwm6azd.json"  
-      background="transparent"  
-      speed="1"  
-      style="width: 220px; height: 220px; margin: 0 auto;"  
-      loop autoplay>
-    </lottie-player>
-    <h2 class="text-4xl font-extrabold mb-4 mt-6">Selamat Datang di Mata Kuliah<br><span class="text-yellow-300">Sistem Operasi 1</span></h2>
-    <p class="text-lg mb-8 text-blue-100 max-w-2xl mx-auto">
-      Pelajari konsep dasar sistem operasi, instalasi OS, dan troubleshooting modern dengan pendekatan praktis dan interaktif.
-    </p>
-    <a href="#minggu" class="bg-yellow-400 text-blue-900 font-semibold px-6 py-3 rounded-full hover:bg-yellow-300 transition">
-      Mulai Belajar
-    </a>
+  <section id="beranda" class="text-center py-24 text-white bg-gradient-to-b from-blue-600 to-green-400">
+    <div class="container mx-auto">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">
+        Selamat Datang di Mata Kuliah <span class="text-yellow-300">Sistem Operasi 1</span>
+      </h1>
+      <p class="text-lg mb-8">
+        Pelajari dasar sistem operasi, instalasi OS, dan troubleshooting modern dengan pendekatan praktis dan interaktif.
+      </p>
+      <a href="minggu1.html" class="bg-yellow-400 text-blue-900 font-semibold py-3 px-8 rounded-full hover:bg-yellow-300 transition">
+        Mulai Belajar
+      </a>
+    </div>
   </section>
 
-  <!-- Tentang Mata Kuliah -->
-  <section id="tentang" class="bg-white text-gray-800 py-16 px-6">
-    <div class="max-w-5xl mx-auto text-center">
-      <h3 class="text-3xl font-bold mb-4 text-green-600">Tentang Mata Kuliah</h3>
-      <p class="text-lg mb-6 text-gray-700">
-        Mata kuliah <strong>Sistem Operasi 1</strong> memberikan pemahaman mendalam tentang cara kerja sistem operasi sebagai penghubung antara perangkat keras dan perangkat lunak. 
-        Mahasiswa akan belajar konsep, instalasi, konfigurasi, keamanan, dan troubleshooting OS seperti Windows, Linux, dan lainnya.
-      </p>
-      <p class="text-gray-600">
-        <strong>Jumlah SKS:</strong> 3 | <strong>Metode:</strong> Teori & Praktikum
+  <!-- Tentang Section -->
+  <section id="tentang" class="py-16 bg-white">
+    <div class="container mx-auto text-center px-6">
+      <h2 class="text-3xl font-bold text-blue-700 mb-6">Tentang Mata Kuliah</h2>
+      <p class="text-gray-700 max-w-3xl mx-auto leading-relaxed">
+        Mata kuliah <strong>Sistem Operasi 1</strong> membahas konsep dasar sistem operasi, pengelolaan sumber daya komputer,
+        serta praktik instalasi dan pemeliharaan. Mahasiswa akan belajar memahami peran OS dalam mengatur CPU, memori,
+        perangkat I/O, serta manajemen file.
       </p>
     </div>
   </section>
 
-  <!-- Daftar Minggu -->
-  <section id="minggu" class="bg-gradient-to-r from-blue-700 to-green-600 py-16 px-6">
-    <div class="max-w-6xl mx-auto text-center">
-      <h3 class="text-3xl font-bold mb-8 text-yellow-300">Materi Per Minggu</h3>
-      <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-        <!-- Loop Card Minggu -->
-        <a href="minggu1.html" class="bg-white text-gray-800 p-5 rounded-xl shadow-lg hover:shadow-2xl transform hover:-translate-y-1 transition">
-          <h4 class="font-bold text-lg text-blue-700">Minggu 1</h4>
-          <p class="text-sm text-gray-600 mt-2">Konsep Dasar Sistem Operasi</p>
-        </a>
-        <a href="minggu2.html" class="bg-white text-gray-800 p-5 rounded-xl shadow-lg hover:shadow-2xl transform hover:-translate-y-1 transition">
-          <h4 class="font-bold text-lg text-blue-700">Minggu 2</h4>
-          <p class="text-sm text-gray-600 mt-2">Jenis dan Fungsi OS</p>
-        </a>
-        <a href="minggu3.html" class="bg-white text-gray-800 p-5 rounded-xl shadow-lg hover:shadow-2xl transform hover:-translate-y-1 transition">
-          <h4 class="font-bold text-lg text-blue-700">Minggu 3</h4>
-          <p class="text-sm text-gray-600 mt-2">Sejarah & Evolusi OS</p>
-        </a>
-        <!-- Minggu 4–12 Placeholder -->
-        <a href="minggu4.html" class="bg-white text-gray-800 p-5 rounded-xl shadow-md hover:bg-green-100 transition"><h4 class="font-bold">Minggu 4</h4><p>Belum Sampai Materi Ini</p></a>
-        <a href="minggu5.html" class="bg-white text-gray-800 p-5 rounded-xl shadow-md hover:bg-green-100 transition"><h4 class="font-bold">Minggu 5</h4><p>Belum Sampai Materi Ini</p></a>
-        <a href="minggu6.html" class="bg-white text-gray-800 p-5 rounded-xl shadow-md hover:bg-green-100 transition"><h4 class="font-bold">Minggu 6</h4><p>Belum Sampai Materi Ini</p></a>
-        <a href="minggu7.html" class="bg-white text-gray-800 p-5 rounded-xl shadow-md hover:bg-green-100 transition"><h4 class="font-bold">Minggu 7</h4><p>Belum Sampai Materi Ini</p></a>
-        <a href="minggu8.html" class="bg-white text-gray-800 p-5 rounded-xl shadow-md hover:bg-green-100 transition"><h4 class="font-bold">Minggu 8</h4><p>Belum Sampai Materi Ini</p></a>
-        <a href="minggu9.html" class="bg-white text-gray-800 p-5 rounded-xl shadow-md hover:bg-green-100 transition"><h4 class="font-bold">Minggu 9</h4><p>Belum Sampai Materi Ini</p></a>
-        <a href="minggu10.html" class="bg-white text-gray-800 p-5 rounded-xl shadow-md hover:bg-green-100 transition"><h4 class="font-bold">Minggu 10</h4><p>Belum Sampai Materi Ini</p></a>
-        <a href="minggu11.html" class="bg-white text-gray-800 p-5 rounded-xl shadow-md hover:bg-green-100 transition"><h4 class="font-bold">Minggu 11</h4><p>Belum Sampai Materi Ini</p></a>
-        <a href="minggu12.html" class="bg-white text-gray-800 p-5 rounded-xl shadow-md hover:bg-green-100 transition"><h4 class="font-bold">Minggu 12</h4><p>Belum Sampai Materi Ini</p></a>
+  <!-- Materi Section -->
+  <section id="materi" class="py-16 bg-gradient-to-r from-green-400 to-blue-500 text-white">
+    <div class="container mx-auto text-center px-6">
+      <h2 class="text-3xl font-bold mb-10">Daftar Materi</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Minggu 1 -->
+        <div class="bg-white text-blue-700 rounded-2xl shadow-md hover:shadow-xl p-6 transition transform hover:-translate-y-1">
+          <h3 class="text-xl font-semibold mb-3">Minggu 1</h3>
+          <p class="mb-4">Pendahuluan & Fungsi Sistem Operasi</p>
+          <a href="minggu1.html" class="text-blue-600 font-bold hover:underline">Buka Materi →</a>
+        </div>
+        <!-- Minggu 2 -->
+        <div class="bg-white text-blue-700 rounded-2xl shadow-md hover:shadow-xl p-6 transition transform hover:-translate-y-1">
+          <h3 class="text-xl font-semibold mb-3">Minggu 2</h3>
+          <p class="mb-4">Sejarah dan Evolusi Sistem Operasi</p>
+          <a href="minggu2.html" class="text-blue-600 font-bold hover:underline">Buka Materi →</a>
+        </div>
+        <!-- Minggu 3 -->
+        <div class="bg-white text-blue-700 rounded-2xl shadow-md hover:shadow-xl p-6 transition transform hover:-translate-y-1">
+          <h3 class="text-xl font-semibold mb-3">Minggu 3</h3>
+          <p class="mb-4">Struktur dan Komponen Sistem Operasi</p>
+          <a href="minggu3.html" class="text-blue-600 font-bold hover:underline">Buka Materi →</a>
+        </div>
+      </div>
+      <div class="mt-8">
+        <a href="minggu4.html" class="inline-block bg-yellow-400 text-blue-900 font-semibold py-3 px-6 rounded-full hover:bg-yellow-300 transition">Lihat Semua Minggu</a>
       </div>
     </div>
   </section>
 
-  <!-- Dosen Pengampu -->
-  <section id="dosen" class="bg-white text-gray-800 py-16 px-6">
-    <div class="max-w-5xl mx-auto text-center">
-      <h3 class="text-3xl font-bold text-green-600 mb-8">Dosen Pengampu</h3>
-      <div class="grid sm:grid-cols-2 gap-8">
-        <div class="bg-blue-50 p-6 rounded-xl shadow hover:shadow-lg transition">
-          <h4 class="text-xl font-semibold text-blue-700">Takdir Ruslan, ST., M.Kom</h4>
-          <p class="text-gray-600 mt-2">Dosen Teknologi Informasi</p>
-        </div>
-        <div class="bg-green-50 p-6 rounded-xl shadow hover:shadow-lg transition">
-          <h4 class="text-xl font-semibold text-green-700">Abdurrahman, S.Pi</h4>
-          <p class="text-gray-600 mt-2">Asisten Pengajar / Praktikum</p>
-        </div>
+  <!-- Dosen Section -->
+  <section id="dosen" class="py-16 bg-white text-center">
+    <h2 class="text-3xl font-bold text-blue-700 mb-8">Dosen Pengampu</h2>
+    <div class="flex flex-col md:flex-row justify-center items-center gap-8">
+      <div class="bg-gray-100 p-6 rounded-2xl shadow-lg w-72">
+        <h3 class="text-xl font-semibold text-blue-700">Takdir Ruslan, ST., M.Kom</h3>
+        <p class="text-gray-600 mt-2">Dosen Sistem Operasi & Jaringan</p>
       </div>
+      <div class="bg-gray-100 p-6 rounded-2xl shadow-lg w-72">
+        <h3 class="text-xl font-semibold text-blue-700">Abdurrahman, S.Pi</h3>
+        <p class="text-gray-600 mt-2">Dosen Pendamping & Praktikum</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kontak Section -->
+  <section id="kontak" class="py-16 bg-gradient-to-r from-blue-600 to-green-400 text-white text-center">
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-bold mb-4">Kontak</h2>
+      <p class="mb-6">Untuk informasi lebih lanjut, hubungi dosen pengampu atau asisten praktikum.</p>
+      <a href="mailto:dosen@kampus.ac.id" class="bg-yellow-400 text-blue-900 py-3 px-6 rounded-full font-semibold hover:bg-yellow-300 transition">
+        Kirim Email
+      </a>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer id="kontak" class="bg-blue-800 text-center text-blue-100 py-6">
-    <p class="mb-2">&copy; 2025 Sistem Operasi 1 | Program Studi Teknik Informatika</p>
-    <div class="space-x-4 text-sm">
-      <a href="#tentang" class="hover:text-yellow-300">RPS</a>
-      <a href="#minggu" class="hover:text-yellow-300">Jadwal</a>
-      <a href="mailto:info@kampus.ac.id" class="hover:text-yellow-300">Kontak Dosen</a>
-    </div>
+  <footer class="bg-blue-800 text-white text-center py-4">
+    <p class="text-sm">&copy; 2025 Sistem Operasi 1 - STTAR | All rights reserved.</p>
   </footer>
+
 </body>
 </html>
